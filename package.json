@@ -1,0 +1,27 @@
+{
+  "name": "ts_framework",
+  "version": "1.0.0",
+  "description": "Type Script Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "graph:bdd": "tsc && mocha -t 20000 dist/specs/graphQL",
+    "browser:bdd": "tsc && mocha -t 20000 dist/specs/browser",
+    "browser:tdd": "tsc && mocha -t 20000 dist/tests/browser",
+    "graph:tdd": "tsc && mocha -t 20000 dist/tests/graphicQL"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^12.12.47",
+    "@types/selenium-webdriver": "^4.0.9",
+    "chromedriver": "^83.0.0",
+    "graphql": "^15.3.0",
+    "mocha": "^8.0.1",
+    "reflect-metadata": "^0.1.13",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.6"
+  }
+}
